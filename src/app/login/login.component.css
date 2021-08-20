@@ -1,0 +1,14 @@
+.card-container-custom {
+  background-color: #f7f7f7;
+  padding: 50px;
+}
+
+.profile-img-card {
+  border-radius: 100% !important;
+  width: 100px !important;
+  margin: 0 auto !important;
+}
+
+.center-item {
+  margin: 0 auto;
+}
