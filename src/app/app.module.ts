@@ -16,6 +16,7 @@ import { authInterceptorProviders } from './_helpers/auth.interceptor';
 import { UploadComponent } from './upload-images/upload/upload.component';
 import { DragAndDropDirective } from './directives/drag-and-drop.directive';
 import { ProgressComponent } from './components/progress/progress.component';
+import { DetailsComponent } from './components/details/details.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { ProgressComponent } from './components/progress/progress.component';
     ProfileComponent,
     UploadComponent,
     DragAndDropDirective,
-    ProgressComponent
+    ProgressComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

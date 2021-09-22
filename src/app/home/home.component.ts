@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { UserService } from '../_services/user.service';
 import CardItem  from '../model/card-item';
+import { DetailsServiceService } from '../_services/details-service.service';
 
 @Component({
   selector: 'app-home',
@@ -11,7 +12,7 @@ export class HomeComponent implements OnInit {
   content?: string;
   items: CardItem[] = [];
 
-  constructor(private userService: UserService) {}
+  constructor(private userService: UserService, private detailsservice: DetailsServiceService) {}
 
   ngOnInit(): void {
     /*this.userService.getPublicContent().subscribe(
@@ -30,5 +31,10 @@ export class HomeComponent implements OnInit {
       };
       this.items.push(item);
     }
+  }
+
+  selectCard(item: CardItem) {
+    //console.log('item selected', item);
+    this.detailsservice.CardSelected(item);
   }
 }
